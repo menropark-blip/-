@@ -1,0 +1,7 @@
+{
+  "hosting": {"public":"dist","ignore":["firebase.json","**/.*","**/node_modules/**"],"headers":[{"source":"**","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"}]}]},
+  "auth": {"providers":{"emailPassword":true}},
+  "firestore": {"rules":"firebase/firestore.rules","indexes":"firebase/firestore.indexes.json","database":"(default)","location":"asia-northeast3"},
+  "functions": [{"source":"firebase/functions","codebase":"koicon","runtime":"nodejs22"}],
+  "emulators": {"auth":{"port":9099},"firestore":{"port":8080},"functions":{"port":5001},"ui":{"enabled":true}}
+}

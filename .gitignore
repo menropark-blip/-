@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.firebase/
+*-credentials.json
+serviceAccount*.json
+*.tgz
+*.tar.gz
+artifacts/
+.sites-runtime/
